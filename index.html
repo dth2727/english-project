@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>English Project</title>
+</head>
+<body>
+
+<h1 class="header" id="header">AI In Law Enforcement</h1>
+<h1 class="otherHeader" id="otherHeader">AI In Law Enforcement</h1>
+<button class="homebtn" onClick="home()" id="homebtn"></button>
+<button class="aboutbtn" onClick="about()" id="aboutbtn">About Us</button>
+<button class="contactbtn" onClick="contact()" id="contactbtn">Contact Us</button>
+<button class="podbtn" onClick="pod()" id="podbtn">Podcast</button>
+<img class="img" src="https://www.microsoft.com/en-us/industry/blog/wp-content/uploads/2017/01/ChicagoPoliceAnalytics_blogIllustration_1200x412.jpg" id="img">
+<button class="btn1" onClick="about()" id="btn1">About</button>
+<button class="btn2" onClick="contact()" id="btn2">Contact Us</button>
+<button class="btn3" onClick="pod()" id="btn3">Podcast</button>
+<h3 class="header3" id="header3">Our Mission Statement</h3>
+<p class="mission" id="mission">The reality of the world with police using AI is approaching rapidly. With this new rise of AI  policing has led to a lack of transparency and accountability by police departments. Our mission is to hold police departments across the United States accountable to high ethical and legal standards. We have been successful in passing local legislation for transparency in the types and uses of police AI. We need all the support we can get to fight this battle over freedom, please look through the rest of our website to help join this monumental movement.</p>
+<h3 class="hproject" id="hproject">Project</h3>
+<p class="project" id="project">In 2020 we founded our organization out of the need for police oversight in the field of AI. We are founded by donors from all over the political spectrum from Bernie Sanders to Mike Johnson. The organization is made of four regional headquarters, Washington DC, Chicago, Denver, and Los Angeles with DC being our head of operations. We have three major parts of the organization. First, Our lobbying branch is based in Washington D.C., which worked directly with the Biden White House to create Biden's policies on AI.  Secondly, our activism branch which works with local communities to increase transparency at a local level. Third and final, our financial branch which works to collect donations to fund our valuable work.</p>
+<h4 class="hdab" id="hdab">Davis</h4>
+<p class="dab" id="dab">Founder, Head Researcher and Labor Management</p>
+<h4 class="hdth" id="hdth">Derek</h4>
+<p class="dth" id="dth">The Coder, Sorta Co-founder</p>
+<a class="edth" id="edth" href="mailto:derek.t.hudgins@gmail.com">Derek Hudgins</a>
+<a class="edab" id="edab" href="mailto:davisbrinkmann@gmail.com">Davis Brinkmann</a>
+
+</body>
+</html>
+
+<style>
+
+:root{
+	--vw: 12vw;
+    --pos1home: 64.3vw;
+    --pos2home: 64vw;
+    --pos1about: 64.3vw;
+    --pos2about: 76vw;
+    --pos1contact: 64.3vw;
+    --pos2contact: 88vw;
+    --pos1pod: 64.3vw;
+    --pos2pod: 88vw;
+    --btnheight: 10vw;
+}
+
+.homebtn{
+	display:none;
+    position: absolute;
+    height: 12vw;
+    width: 12%;
+    background-image: url('https://www.kindpng.com/picc/m/1-17813_28-collection-of-home-button-clipart-png-house.png');
+    top: 0px;
+  	background-size: 50% 50%;
+    filter: invert(100%) contrast(99%) brightness(1400%);
+    border:none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(0,0,0,0);
+    left:64vw;
+}
+
+.aboutbtn{
+	display:none;
+    position: absolute;
+    height: 11.9vw;
+    width: 12%;
+    top: 0px;
+    border:none;
+    background-color: gray;
+    left:var(--pos2about);
+    color:white;
+    font-size:2.5vw;
+    font-weight:bold;
+}
+
+.contactbtn{
+	display:none;
+    position: absolute;
+    height: 11.9vw;
+    width: 12%;
+    top: 0px;
+    border:none;
+    background-color: gray;
+    left: var(--pos2contact);
+    color:white;
+    font-size:2.5vw;
+    font-weight:bold;
+}
+
+.podbtn{
+	display:none;
+    position: absolute;
+    height: 11.9vw;
+    width: 12%;
+    top: 0px;
+    border:none;
+    background-color: gray;
+    left: var(--pos2pod);
+    color:white;
+    font-size:2.5vw;
+    font-weight:bold;
+}
+
+.homebtn:hover{
+	filter: invert(0%) contrast(99%) brightness(50%);
+}
+
+.aboutbtn:hover{
+	color:black;
+}
+
+.contactbtn:hover{
+	color:black;
+}
+
+.podbtn:hover{
+	color:black;
+}
+
+.header{
+	position: absolute;
+    height: var(--vw);
+    background: gray;
+    width: 100%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: 6vw;
+    top: 0px;
+    left: 0px;
+    padding-top: 3vw;
+    font-family: sans-serif;
+}
+
+.img{
+	position: absolute;
+    top: var(--vw);
+    right: 0px;
+    width: 100%;
+}
+
+.btn1{
+	position: absolute;
+    top: 64.3vw;
+    width: 33.333333%;
+    height: var(--btnheight);
+    left: 0px;
+    background: gray;
+    border-width: 0.3vw;
+    border-color: black;
+    font-size: 3vw;
+    font-weight: bold;
+    color: white;
+}
+
+.btn2{
+	position: absolute;
+    top: 64.3vw;
+    width: 33.333333%;
+    height: var(--btnheight);
+    left: 33.333333%;
+    background: gray;
+    border-width: 0.3vw;
+    border-color: black;
+    font-size: 3vw;
+    font-weight: bold;
+    color: white;
+}
+
+.btn3{
+	position: absolute;
+    top: 64.3vw;
+    width: 33.333333%;
+    height: var(--btnheight);
+    left: 66.666666%;
+    background: gray;
+    border-width: 0.3vw;
+    border-color: black;
+    font-size: 3vw;
+    font-weight: bold;
+    color: white;
+}
+
+.btn1:hover{
+    color: black;
+}
+
+.btn2:hover{
+    color: black;
+}
+
+.btn3:hover{
+    color: black;
+}
+
+.btn1:active{
+    box-shadow: inset 1vw 1vw 1vw 0px;
+}
+
+.btn2:active{
+    box-shadow: inset 1vw 1vw 1vw 0px;
+}
+
+.btn3:active{
+    box-shadow: inset 1vw 1vw 1vw 0px;
+}
+
+.homebtn:active{
+    box-shadow: inset 1vw 1vw 1vw 0px;
+}
+
+.aboutbtn:active{
+    box-shadow: inset 1vw 1vw 1vw 0px;
+}
+
+.contactbtn:active{
+    box-shadow: inset 1vw 1vw 1vw 0px;
+}
+
+.podbtn:active{
+    box-shadow: inset 1vw 1vw 1vw 0px;
+}
+
+.header3{
+	position: absolute;
+    top: 80vw;
+    font-size: 5vw;
+    text-align: center;
+    width: 80vw;
+    left: 10vw;
+    font-family: sans-serif;
+}
+
+.mission{
+	position: absolute;
+    top: 93vw;
+    width: 85vw;
+    left: 10vw;
+    height:40vw;
+    font-size: 3vw;
+    font-family: sans-serif;
+}
+
+.otherHeader{
+	display:none;
+    position: absolute;
+    height: 8.867vw;
+    background: gray;
+    width: 73%;
+    margin: auto;
+    color: white;
+    font-size: 4vw;
+    top: 0px;
+    left: 0px;
+    padding-top: 3vw;
+    padding-left: 3vw;
+    font-family: sans-serif;
+}
+
+.hproject{
+	display:none;
+    position: absolute;
+    top:12vw;
+    text-align:center;
+    right:35vw;
+    width:30vw;
+    font-size:5vw;
+}
+
+.hdab{
+	display:none;
+    position: absolute;
+    top:62vw;
+    text-align:center;
+    right:35vw;
+    width:30vw;
+    font-size:5vw;
+}
+
+.hdth{
+	display:none;
+    position: absolute;
+    top:82vw;
+    text-align:center;
+    right:35vw;
+    width:30vw;
+    font-size:5vw;
+}
+
+.project{
+	display:none;
+    position: absolute;
+    top:21vw;
+    width:80vw;
+    font-size:3vw;
+    right:10vw;
+    height:42vw;
+}
+
+.dab{
+	display:none;
+    position: absolute;
+    top:72vw;
+    text-align:center;
+    right:15vw;
+    width:70vw;
+    font-size:4vw;
+}
+
+.dth{
+	display:none;
+    position: absolute;
+    top:92vw;
+    text-align:center;
+    right:15vw;
+    width:70vw;
+    font-size:4vw;
+    padding-bottom:10vw;
+}
+
+.edth{
+	display:none;
+    position:absolute;
+    top:20vw;
+    text-align:center;
+    font-size:5vw;
+    width:31vw;
+    right:34.5vw;
+}
+
+.edab{
+	display:none;
+    position:absolute;
+    top:40vw;
+    text-align:center;
+    font-size:5vw;
+    width:36vw;
+    right:32vw;
+}
+
+</style>
+
+<script>
+
+var h = document.querySelector(':root');
+
+function home(){
+document.getElementById("header").style.display="block";
+document.getElementById("header3").style.display="block";
+document.getElementById("mission").style.display="block";
+document.getElementById("btn1").style.display="block";
+document.getElementById("btn2").style.display="block";
+document.getElementById("btn3").style.display="block";
+document.getElementById("img").style.display="block";
+document.getElementById("homebtn").style.display="none";
+document.getElementById("aboutbtn").style.display="none";
+document.getElementById("contactbtn").style.display="none";
+document.getElementById("podbtn").style.display="none";
+document.getElementById("otherHeader").style.display="none";
+document.getElementById("hproject").style.display="none";
+document.getElementById("project").style.display="none";
+document.getElementById("hdab").style.display="none";
+document.getElementById("dab").style.display="none";
+document.getElementById("hdth").style.display="none";
+document.getElementById("dth").style.display="none";
+document.getElementById("edth").style.display="none";
+document.getElementById("edab").style.display="none";
+}
+
+function about(){
+h.style.setProperty('--pos2contact', '76vw');
+document.getElementById("header").style.display="none";
+document.getElementById("header3").style.display="none";
+document.getElementById("mission").style.display="none";
+document.getElementById("btn1").style.display="none";
+document.getElementById("btn2").style.display="none";
+document.getElementById("btn3").style.display="none";
+document.getElementById("img").style.display="none";
+document.getElementById("homebtn").style.display="block";
+document.getElementById("aboutbtn").style.display="none";
+document.getElementById("contactbtn").style.display="block";
+document.getElementById("podbtn").style.display="block";
+document.getElementById("otherHeader").style.display="block";
+document.getElementById("hproject").style.display="block";
+document.getElementById("project").style.display="block";
+document.getElementById("hdab").style.display="block";
+document.getElementById("dab").style.display="block";
+document.getElementById("hdth").style.display="block";
+document.getElementById("dth").style.display="block";
+document.getElementById("edth").style.display="none";
+document.getElementById("edab").style.display="none";
+}
+
+function contact(){
+h.style.setProperty('--pos2about', '76vw');
+document.getElementById("header").style.display="none";
+document.getElementById("header3").style.display="none";
+document.getElementById("mission").style.display="none";
+document.getElementById("btn1").style.display="none";
+document.getElementById("btn2").style.display="none";
+document.getElementById("btn3").style.display="none";
+document.getElementById("img").style.display="none";
+document.getElementById("homebtn").style.display="block";
+document.getElementById("aboutbtn").style.display="block";
+document.getElementById("contactbtn").style.display="none";
+document.getElementById("podbtn").style.display="block";
+document.getElementById("otherHeader").style.display="block";
+document.getElementById("hproject").style.display="none";
+document.getElementById("project").style.display="none";
+document.getElementById("hdab").style.display="none";
+document.getElementById("dab").style.display="none";
+document.getElementById("hdth").style.display="none";
+document.getElementById("dth").style.display="none";
+document.getElementById("edth").style.display="block";
+document.getElementById("edab").style.display="block";
+}
+
+function pod(){
+h.style.setProperty('--pos2about', '76vw');
+h.style.setProperty('--pos2contact', '88vw');
+document.getElementById("header").style.display="none";
+document.getElementById("header3").style.display="none";
+document.getElementById("mission").style.display="none";
+document.getElementById("btn1").style.display="none";
+document.getElementById("btn2").style.display="none";
+document.getElementById("btn3").style.display="none";
+document.getElementById("img").style.display="none";
+document.getElementById("homebtn").style.display="block";
+document.getElementById("aboutbtn").style.display="block";
+document.getElementById("contactbtn").style.display="block";
+document.getElementById("podbtn").style.display="none";
+document.getElementById("otherHeader").style.display="block";
+document.getElementById("hproject").style.display="none";
+document.getElementById("project").style.display="none";
+document.getElementById("hdab").style.display="none";
+document.getElementById("dab").style.display="none";
+document.getElementById("hdth").style.display="none";
+document.getElementById("dth").style.display="none";
+document.getElementById("edth").style.display="none";
+document.getElementById("edab").style.display="none";
+}
+
+</script>
