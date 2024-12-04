@@ -27,6 +27,7 @@
 <p class="dth" id="dth">The Coder, Sorta Co-founder</p>
 <a class="edth" id="edth" href="mailto:derek.t.hudgins@gmail.com">Derek Hudgins</a>
 <a class="edab" id="edab" href="mailto:davisbrinkmann@gmail.com">Davis Brinkmann</a>
+<p id="pod" class="pod">Coming Soon...</p>
 
 </body>
 </html>
@@ -50,7 +51,7 @@
 	display:none;
     position: absolute;
     height: 12vw;
-    width: 12%;
+    width: 12vw;
     background-image: url('https://www.kindpng.com/picc/m/1-17813_28-collection-of-home-button-clipart-png-house.png');
     top: 0px;
   	background-size: 50% 50%;
@@ -60,6 +61,7 @@
     background-position: center center;
     background-color: rgba(0,0,0,0);
     left:64vw;
+    min-width: 12vw;
 }
 
 .aboutbtn{
@@ -144,7 +146,7 @@
 
 .btn1{
 	position: absolute;
-    top: 64vw;
+    top: 63vw;
     width: 33.333333%;
     height: var(--btnheight);
     left: 0px;
@@ -158,7 +160,7 @@
 
 .btn2{
 	position: absolute;
-    top: 64vw;
+    top: 63vw;
     width: 33.333333%;
     height: var(--btnheight);
     left: 33.333333%;
@@ -172,7 +174,7 @@
 
 .btn3{
 	position: absolute;
-    top: 64vw;
+    top: 63vw;
     width: 33.333333%;
     height: var(--btnheight);
     left: 66.666666%;
@@ -249,7 +251,7 @@
     position: absolute;
     height: 8.867vw;
     background: gray;
-    width: 73%;
+    width: 100%;
     margin: auto;
     color: white;
     font-size: 4vw;
@@ -341,6 +343,16 @@
     right:32vw;
 }
 
+.pod{
+	display:none;
+    position: absolute;
+    top:25vw;
+    text-align:center;
+    font-size:8vw;
+    width:51vw;
+    right:24.5vw;
+    padding-bottom:20vw;
+}
 </style>
 
 <script>
@@ -372,6 +384,7 @@ document.getElementById("edab").style.display="none";
 
 function about(){
 h.style.setProperty('--pos2contact', '76vw');
+h.style.setProperty('--pos2pod', '88vw');
 document.getElementById("header").style.display="none";
 document.getElementById("header3").style.display="none";
 document.getElementById("mission").style.display="none";
@@ -396,6 +409,7 @@ document.getElementById("edab").style.display="none";
 
 function contact(){
 h.style.setProperty('--pos2about', '76vw');
+h.style.setProperty('--pos2contact', '88vw');
 document.getElementById("header").style.display="none";
 document.getElementById("header3").style.display="none";
 document.getElementById("mission").style.display="none";
@@ -441,6 +455,7 @@ document.getElementById("hdth").style.display="none";
 document.getElementById("dth").style.display="none";
 document.getElementById("edth").style.display="none";
 document.getElementById("edab").style.display="none";
+document.getElementById("pod").style.display="block";
 }
 
 </script>
